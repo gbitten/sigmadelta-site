@@ -1,0 +1,10 @@
+
+# VIM temp files
+*~
+*.swp
+*.swo
+
+# Jekyll files
+Gemfile.lock
+_site
+.vscode

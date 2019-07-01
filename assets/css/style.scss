@@ -1,0 +1,171 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Eliminate “Jumps” in Horizontal Centering By Forcing a Scroll Bar */
+html {
+	overflow-y: scroll; 
+}
+
+/* Ajust code colors */
+.highlight {
+	background-color: #333333;
+}
+
+pre {
+	border: 2px solid #777777;
+}
+
+pre code {
+	background: #333333;
+	color: #cccccc;
+}
+
+/* Header*/
+header {
+	padding-top: 0px;
+	padding-bottom: 0;
+	border: 0;	
+}
+
+header h1 {
+	padding-top: 15px;
+	width: 100%;
+	font-size: 48px;
+}
+
+header h2 {
+	width: 100%;
+	font-size: 32px;
+}
+
+header .inner {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#content-wrapper {
+	padding-top: 0;
+	border-top: solid 1px #fafafa;
+}
+
+#main-content {
+    padding-top: 5px;
+}
+
+/* Main content*/
+#main-content h2 {
+	border-bottom: 1px solid #a2a9b1;	
+}
+
+#main-content h1:before, #main-content h2:before,  #main-content h3:before, #main-content h4:before{
+	content: ""; 
+	padding-right: inherit;
+	margin-left: inherit;
+}
+
+/* Put sidebar below */
+aside#sidebar {
+	min-height: 0;
+	padding: 5px;
+	margin-top: 20px;
+	background-image: none;
+	border-top: solid 1px #a2a9b1;
+}
+
+#main-content, aside#sidebar {
+	float: none;
+	width: 100%;
+}
+
+/* Alert box */
+.alert {
+	padding: 15px;
+	background-color: #f44336; /* Red */
+	color: white;
+	margin-bottom: 15px;
+}
+
+form * {
+	width: 100%;
+	padding: 3px;
+	margin: 3px;
+	border: 1px solid dimgrey;
+	resize: vertical;
+}
+
+form button {
+	width: auto;
+}
+
+
+/* Menu */
+.menu {
+	list-style-type: none;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 16px 5px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #105998;
+}
+
+.menu li a.active {
+    color: darkgrey;
+    background-color: #fafafa;
+}
+
+.lang-menu {
+	list-style-type: none;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.lang-menu li {
+	float: right;
+	padding: 0px 3px 0px 3px;
+	font-weight: bold;
+	background-color: white;
+}
+
+	
+.lang-menu li a {
+	font-weight: normal;	
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: dimgray;
+}
+
+/* Images */
+
+img {
+	border: solid 1px dimgray;
+	margin: 10px 0 10px 10px;
+	float: right;
+	max-width: 100%;
+	
+}
+
+h2 {
+	overflow: hidden;
+}

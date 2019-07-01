@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>{{ site.title }} - {{ page.title }}</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="/{{page.lang}}/main/"> 
+          <h1>{{ site.title }}</h1>
+        </a>
+      </div>
+      <ul class="menu">
+        {% for lang in site.langs %}
+          {% if lang.id == page.lang %}
+            {% for menu in lang.menu %}
+            <li><a {% if page.area == menu.area %}class="active"{% endif %} href="/{{ lang.id }}/{{ menu.area }}/">{{ menu.label }}</a></li>
+            {% endfor %}            
+          {% endif %}        
+        {% endfor %}           
+      </ul>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <ul class="lang-menu">
+          {% assign pages=site.pages | where:"ref", page.ref | where:"area", page.area | sort: 'lang' %}
+          {% for pg in pages %}
+          <li>
+            {% if pg.lang == page.lang %}{{ pg.lang }}{% else %}<a href="{{ pg.url }}">{{ pg.lang }}</a>{% endif %}
+          </li>
+            {% endfor %}
+        </ul>    
+        <section id="main-content">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+          {% if page.comments %}
+          <div id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+              this.page.url = "{{ site.url }}{{ page.url }}";
+              this.page.identifier = "{{ site.url }}{{ page.url }}";
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://kernel-notes.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+          {% endif %}
+        </section>
+        <aside id="sidebar">
+          {% if site.github.is_project_page %}
+          <p class="repo-owner" style="text-align:right;">
+              {% if page.lang == "pt" %}
+              Email: consulting@sigmadelta.tech<br>
+              Tel.: (21) 98283-6692
+              {% elsif page.lang == "en" %}
+              Email: consulting@sigmadelta.tech<br>
+              Phone: +55 21 98283-6692
+              {% endif %}  
+            </p>
+          {% endif %}
+        </aside>
+      </div>
+    </div>
+
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
