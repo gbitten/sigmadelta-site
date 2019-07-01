@@ -9,7 +9,7 @@ redirect_from:
   - /en/
 ---
 
-<img src="/img/logo-en.png" style="width: 300px"  />
+<img src="/img/logo-pt.png" style="width: 300px"  />
 **Sigma Delta Technology** helps clients with  complex electronic, telecommunications and computing projects. Your mission is to build intelligent and innovative solutions to meet the needs of our customers.
 
 ## What we do
