@@ -9,8 +9,8 @@ redirect_from:
   - /en/
 ---
 
-<img src="/img/logo.jpg" style="width: 300px"  />
-**Sigma Delta Technologies** helps clients with  complex electronic, telecommunications and computing projects. Your mission is to build intelligent and innovative solutions to meet the needs of our customers. 
+<img src="/img/logo-en.png" style="width: 300px"  />
+**Sigma Delta Technology** helps clients with  complex electronic, telecommunications and computing projects. Your mission is to build intelligent and innovative solutions to meet the needs of our customers.
 
 ## What we do
 
@@ -32,5 +32,5 @@ Consulting on developing embedded systems, Internet of Things (IoT), Software De
 
 ## We on social network
 
-* [Facebook](https://www.facebook.com/SigmaDeltaTechnologies/)
+* [Facebook](https://www.facebook.com/SigmaDeltaTechnology/)
 * [Linkedin](https://www.linkedin.com/company/sigmadelta/)

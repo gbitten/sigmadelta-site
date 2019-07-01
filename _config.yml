@@ -1,33 +1,29 @@
 theme: jekyll-theme-architect
-title: Sigma Delta Technologies
-description: Home page da Sigma Delta Technologies
+title: Sigma Delta Technology
+description: Home page da Sigma Delta Technology
 show_downloads: false
 
 # Google services
-google_analytics: UA-97992983-2
+google_analytics: UA-143076561-1
 
 # Jekyll plugins
 plugins:
   - jekyll-redirect-from
 
 langs:
-- id: pt
-  menu:
-  - area: main
-    label: Página principal
-  - area: cv
-    label: CV
-  - area: articles
-    label: Artigos
-  - area: contact
-    label: Contato
-- id: en
-  menu:
-  - area: main
-    label: Home page
-  - area: cv
-    label: CV
-  - area: articles
-    label: Articles
-  - area: contact
-    label: Contact
+  - id: pt
+    menu:
+    - area: main
+      label: Página principal
+    - area: projects
+      label: Projetos
+    - area: contact
+      label: Contato
+  - id: en
+    menu:
+    - area: main
+      label: Home page
+    - area: projects
+      label: Projects
+    - area: contact
+      label: Contact
