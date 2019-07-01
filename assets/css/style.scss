@@ -31,13 +31,18 @@ header {
 
 header h1 {
 	padding-top: 15px;
+	margin: 0px;
 	width: 100%;
-	font-size: 48px;
+	font-size: 64px;
+	font-family: 'Noto Serif', serif;
 }
 
 header h2 {
 	width: 100%;
-	font-size: 32px;
+	font-size: 24px;
+	font-family: 'Noto Sans', sans-serif;
+	padding-bottom: 10px;
+	color: white;
 }
 
 header .inner {
