@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <img src="/img/logo-pt.png" style="width: 300px"  />
-**Sigma Delta Technology** helps clients with  complex electronic, telecommunications and computing projects. Your mission is to build intelligent and innovative solutions to meet the needs of our customers.
+**Sigma Delta Tecnologia** develops complex electronic, telecommunications and computing engineering projects. Our mission is to build intelligent and innovative solutions which truly helps our clients. Our goal is to offer intelligent and permanents solutions for the organizations and the society.
 
 ## What we do
 

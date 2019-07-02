@@ -10,8 +10,8 @@ redirect_from:
   - /pt/
 ---
 
-<img src="/img/logo-pt.png" style="width: 300px"  />
-**Sigma Delta Tecnologia** apoia clientes em projetos complexos de engenharia eletrônica, telecomunicações e de computação. Nossa missão é construir soluções inteligentes e inovadoras que verdadeiramente atendam as necessidades de nossos clientes. 
+<img src="/img/logo-pt.png" style="width: 300px" />
+A **Sigma Delta Tecnologia** desenvolve projetos complexos de engenharia eletrônica, engenharia telecomunicações e engenharia de computação. Nossa missão é construir soluções inteligentes e inovadoras que verdadeiramente atendam as necessidades de nossos clientes. O nosso foco é oferecer soluções inteligentes e permanentes para empresas e para sociedade.
 
 ## O que fazemos
 
@@ -33,10 +33,10 @@ Desenvolvemos atividades de:
 * Testes de invasão e vulnerabilidade.
 * Otimização de desempenho.
 * Desenvolvimento em kernel Linux, Board Support Package (BSP) e Device Drives.
-* Processamento de sinais
-* Modelos de simulação
-* Modelos de propagação
-* Projeto de receptores (equalização e codificação de fonte de canal)
+* Processamento de sinais.
+* Modelos de simulação.
+* Modelos de propagação.
+* Projeto de receptores (equalização e codificação de fonte de canal).
 * Integração de sistemas.
 * Desenvolvimento em Software Communications Architecture (SCA).
 * Desenvolvimento em C, C++, MATLAB, Java e Go.
