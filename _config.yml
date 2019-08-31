@@ -15,15 +15,15 @@ langs:
     menu:
     - area: main
       label: Página principal
-    - area: projects
-      label: Projetos
+    - area: clients
+      label: Clientes
     - area: contact
       label: Contato
   - id: en
     menu:
     - area: main
       label: Home page
-    - area: projects
-      label: Projects
+    - area: clients
+      label: Clients
     - area: contact
       label: Contact
